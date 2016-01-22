@@ -6,7 +6,6 @@
 	<title></title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="jquery.geocomplete.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="main.css">
 </head>
@@ -27,26 +26,23 @@
 	      <div class="modal-body">
 	        	<div class="row">
 	        		<div class="col-xs-6" style="background: #d3d3d3;">
-	        			<form>
+	        			<form role="form" data-toggle="validator">
 	        			<h2>Vehicle's Details</h2>
 	        			<hr>
-	        			  <fieldset class="form-group">
-	        			    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Plate number">
+	        			  <fieldset class="form-group col-sm-12">
+	        			    <input type="text" class="form-control" placeholder="Plate number">
 	        			  </fieldset>
-	        			  <label class="form-inline" style="width:100%">
-	        			  	<div class="form-group">
-	        			      <input type="text" class="form-control" id="exampleInputName2" placeholder="Manufacturer">
+	        			  	<div class="form-group col-sm-6">
+	        			      <input type="text" class="form-control" placeholder="Manufacturer">
 	        			    </div>
-	        			    <div class="form-group">
-	        			      <input type="year" class="form-control" id="exampleInputEmail2" placeholder="Year of manufacture">
+	        			    <div class="form-group col-sm-6">
+	        			      <input type="year" class="form-control" placeholder="Year of manufacture">
 	        			    </div>
-	        			  </label>
-	        			    
-	        			  <fieldset class="form-group">
-	        			    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Chassis Number">
+	        			  <fieldset class="form-group col-sm-12">
+	        			    <input type="text" class="form-control" placeholder="Chassis Number">
 	        			  </fieldset>
-	        			  <label class="form-inline">
-	        			  	<div class="form-group">
+	        			  
+	        			  	<div class="form-group col-sm-6">
 	        			      <select class="form-control">
 	        			      	<option value="" disabled selected text="muted">Vehicle type</option>
 	        			        <option>1</option>
@@ -56,14 +52,13 @@
 	        			        <option>5</option>
 	        			      </select>
 	        			    </div>
-	        			    <div class="form-group">
+	        			    <div class="form-group col-sm-6">
 	        			      <input type="number" class="form-control" id="exampleInputEmail2" placeholder="Capacity in tonnage">
 	        			    </div>
-	        			  </label>
+	        			 
 	        			  <hr>
 	        			  <p>Preferred Routes</p>
-	        			  <label class="form-inline">
-	        			  	<div class="form-group">
+	        			  	<div class="form-group col-sm-6">
 	        			     <select class="form-control">
 	        			     	<option value="" disabled selected text="muted">Station1</option>
 	        			        <option>1</option>
@@ -73,7 +68,7 @@
 	        			        <option>5</option>
 	        			      </select>
 	        			    </div>
-	        			    <div class="form-group">
+	        			    <div class="form-group col-sm-6">
 	        			      <select class="form-control">
 	        			      	<option value="" disabled selected text="muted">Station2</option>
 	        			        <option>1</option>
@@ -83,8 +78,8 @@
 	        			        <option>5</option>
 	        			      </select>
 	        			    </div>
-	        			  </label>
-	        			  <fieldset class="form-group">
+	        			  
+	        			  <fieldset class="form-group col-sm-12">
 	        			    <select class="form-control">
 	        			    	<option value="" disabled selected text="muted">Assign driver to station</option>
 	        			        <option>1</option>
@@ -94,25 +89,27 @@
 	        			        <option>5</option>
 	        			      </select>
 	        			  </fieldset>
-	        			  <label class="form-inline">
-	        			  	<div class="checkbox">
+	        			  
+	        			  	<div class="checkbox col-sm-6">
 	        			  	    <label>
 	        			  	      <input type="checkbox"> GPS Provider
 	        			  	    </label>
 	        			  	  </div>
-	        			    <div class="form-group">
-	        			      <input type="year" class="form-control" id="exampleInputEmail2" placeholder="Year of manufacture">
+	        			    <div class="form-group col-sm-6">
+	        			      <input type="text" class="form-control" id="exampleInputEmail2" placeholder="GPS Provider">
 	        			    </div>
-	        			  </label>
-	        			  <div>
-	        			  	<div class="box">
-	        			  	<h3 style="margin: 10px;">Add photo</h3>
-	        			  </div>
-	        			  <div class="box">
-	        			  	<h3 style="margin: 10px;">Add photo</h3>
-	        			  </div>
-	        			  </div>
 	        			  
+	        			  <div>
+	        			  	<div class="box col-sm-6">
+	        			  	<h3 style="margin: 10px;">Add photo</h3>
+	        			  </div>
+	        			  <div class="box col-sm-6">
+	        			  	<h3 style="margin: 10px;">Add photo</h3>
+	        			  </div>
+	        			  </div>
+	        			  <div class="form-group col-sm-12">
+	        			      <button type="submit" class="btn btn-primary">Submit</button>
+	        			   </div>
 	        			</form>
 	        		</div>
 	        		<div class="col-xs-6">
