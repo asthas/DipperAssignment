@@ -20,6 +20,9 @@ html, body {
 }
 
 .excel {
+	width: 50%;
+	height: 100%;
+	border: 2px dashed green;
 	z-index: 1;
 	position: relative;
 }
@@ -28,4 +31,9 @@ html, body {
 	margin: 300px 420px;
 	z-index:5;
 	position: absolute;
+}
+
+input[type=file] { 
+    width: 1px; 
+    visibility: hidden;
 }

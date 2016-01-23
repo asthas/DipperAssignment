@@ -17,3 +17,9 @@ $('.excel').click(function() {
 		$('.detail').fadeTo('fast', 0.5)
 	})
 })
+
+$(function(){
+    $('#clickme').click(function(){
+        $('#uploadme').click();
+    });
+});
