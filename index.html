@@ -27,25 +27,25 @@
 	      </div>
 	      <div class="modal-body">
 	        	<div class="row">
-	        		<div class="col-xs-6" style="background: #d3d3d3;">
-	        			<form id="myForm" role="form" data-toggle="validator">
+	        		<div class="detail col-xs-6" style="background: #d3d3d3;">
+	        			<form id="myForm" role="form" required>
 	        			<h2>Vehicle's Details</h2>
 	        			<hr>
 	        			  <fieldset class="form-group col-sm-12">
-	        			    <input type="text" class="form-control" placeholder="Plate number">
+	        			    <input type="text" class="form-control" placeholder="Plate number" required>
 	        			  </fieldset>
 	        			  	<div class="form-group col-sm-6">
-	        			      <input type="text" class="form-control" placeholder="Manufacturer">
+	        			      <input type="text" class="form-control" placeholder="Manufacturer" required>
 	        			    </div>
 	        			    <div class="form-group col-sm-6">
-	        			      <input type="year" class="form-control" placeholder="Year of manufacture">
+	        			      <input type="year" class="form-control" placeholder="Year of manufacture" required>
 	        			    </div>
 	        			  <fieldset class="form-group col-sm-12">
-	        			    <input type="text" class="form-control" placeholder="Chassis Number">
+	        			    <input type="text" class="form-control" placeholder="Chassis Number" required>
 	        			  </fieldset>
 	        			  
 	        			  	<div class="form-group col-sm-6">
-	        			      <select class="form-control">
+	        			      <select class="form-control" required>
 	        			      	<option value="" disabled selected text="muted">Vehicle type</option>
 	        			        <option>1</option>
 	        			        <option>2</option>
@@ -54,14 +54,14 @@
 	        			        <option>5</option>
 	        			      </select>
 	        			    </div>
-	        			    <div class="form-group col-sm-6">
-	        			      <input type="number" class="form-control" id="exampleInputEmail2" placeholder="Capacity in tonnage">
+	        			    <div class="form-group col-sm-6" required>
+	        			      <input type="number" class="form-control"  placeholder="Capacity in tonnage">
 	        			    </div>
 	        			 
 	        			  <hr>
 	        			  <p>Preferred Routes</p>
 	        			  	<div class="form-group col-sm-6">
-	        			     <select class="form-control">
+	        			     <select class="form-control" required>
 	        			     	<option value="" disabled selected text="muted">Station1</option>
 	        			        <option>1</option>
 	        			        <option>2</option>
@@ -71,7 +71,7 @@
 	        			      </select>
 	        			    </div>
 	        			    <div class="form-group col-sm-6">
-	        			      <select class="form-control">
+	        			      <select class="form-control" required>
 	        			      	<option value="" disabled selected text="muted">Station2</option>
 	        			        <option>1</option>
 	        			        <option>2</option>
@@ -82,7 +82,7 @@
 	        			    </div>
 	        			  
 	        			  <fieldset class="form-group col-sm-12">
-	        			    <select class="form-control">
+	        			    <select class="form-control" required>
 	        			    	<option value="" disabled selected text="muted">Assign driver to station</option>
 	        			        <option>1</option>
 	        			        <option>2</option>
@@ -94,11 +94,11 @@
 	        			  
 	        			  	<div class="checkbox col-sm-6">
 	        			  	    <label>
-	        			  	      <input type="checkbox"> GPS Provider
+	        			  	      <input type="checkbox" required> GPS Provider
 	        			  	    </label>
 	        			  	  </div>
 	        			    <div class="form-group col-sm-6">
-	        			      <input type="text" class="form-control" id="exampleInputEmail2" placeholder="GPS Provider">
+	        			      <input type="text" class="form-control" placeholder="GPS Provider" required>
 	        			    </div>
 	        			  
 	        			  <div>
@@ -114,7 +114,10 @@
 	        			   </div>
 	        			</form>
 	        		</div>
-	        		<div class="col-xs-6">
+					<div class="choose">
+						<h1>OR</h1>
+					</div>
+	        		<div class="excel col-xs-6">
 	        			Hi
 	        		</div>
 	        	</div>
@@ -126,7 +129,6 @@
 	    </div>
 	  </div>
 	</div>
-
 	</div>
 	<script>
 	$("#myForm").validator();

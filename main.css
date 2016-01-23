@@ -13,3 +13,19 @@ html, body {
 	height: 100px;
 	border: 2px solid orange;
 }
+
+.detail {
+	z-index: 1;
+	position: relative;
+}
+
+.excel {
+	z-index: 1;
+	position: relative;
+}
+
+.choose {
+	margin: 300px 420px;
+	z-index:5;
+	position: absolute;
+}
