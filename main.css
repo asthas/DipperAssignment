@@ -18,13 +18,25 @@ html, body {
 	z-index: 1;
 	position: relative;
 }
-
 .excel {
 	width: 50%;
 	height: 100%;
-	border: 2px dashed green;
+	
 	z-index: 1;
 	position: relative;
+}
+#main {
+	margin: 8px;
+	margin-left: auto;
+	border: 2px dashed green;
+	border-radius: 5%;
+}
+
+#clickme {
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 300px;
+	margin-bottom: 300px;
 }
 
 .choose {
