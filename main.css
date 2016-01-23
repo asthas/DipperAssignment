@@ -49,3 +49,12 @@ input[type=file] {
     width: 1px; 
     visibility: hidden;
 }
+.entry {
+	background-color: orange;
+	border-color: orange;
+}
+
+.entry:hover {
+	background-color: orange;
+	border-color: orange;
+}
